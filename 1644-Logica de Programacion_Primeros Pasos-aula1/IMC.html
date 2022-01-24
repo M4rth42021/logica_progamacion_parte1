@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+
+function saltarlinea() {
+
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+
+}
+
+function imprimir(frase) {
+	document.write(frase);
+	saltarlinea();
+}
+
+
+
+function calcularImc (peso,altura) {
+	
+	imc = peso/(altura*altura);
+
+	return	imc;
+
+}
+
+
+var imcMartha = calcularImc (71, 1.72);
+var imcJeronimo = calcularImc (50, 1.20);
+
+imprimir ("El promedio del imc calculado  de Martha y Jeronimo es:  "+(imcMartha + imcJeronimo)/2);
+
+
+nombre= prompt ("Informe su nombre")
+pesoinformado = prompt("Ingrese su peso")
+alturainformada = prompt ("Informe su altura")
+
+imcCalculado = calcularImc (pesoinformado,alturainformada)
+
+imprimir ("El imc calculado es:  "+imcCalculado);
+
+</script>
+
+
+
+
+
+
+
+
+
+
