@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>EDAD PARA CONDUCIR </h1>
+
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var nombre = prompt("Cual es tu nombre?");
+    var edad = parseInt(prompt(nombre + ", ¿Cuál es tu edad?"));
+    var tieneLicencia = prompt(nombre + ", ¿Tienes licencia? Responde S o N");
+
+
+    if ((edad >= 18) && (tieneLicencia == "S")) {
+            imprimir(nombre  + ",Puedes conducir");
+        } 
+
+
+    if (edad < 18){
+
+        imprimir (nombre + " , No puede conducir");
+    }
+
+
+</script>
+
+
