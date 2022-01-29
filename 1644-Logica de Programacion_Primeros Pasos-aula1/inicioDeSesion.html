@@ -1,0 +1,39 @@
+
+//RETO ALURA
+<meta charset="UTF-8">
+
+<h1> PROGRAMA - INICIO DE SESIÓN</h1>
+
+
+<script>
+
+
+    var intentos = 3;
+    var contador = 1;
+
+    while (contador <= intentos){
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+                    
+    if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+
+        break;
+
+    } 
+
+    else {
+
+        alert("inicio de sesión inválido. Favor intente de nuevo");
+        contador = contador +1;
+
+        }
+
+    }
+
+</script>
